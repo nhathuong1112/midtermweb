@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets" version="1.0.0" id="tw.edu.nfu.LearningChinese">
+
+<!-- versionCode is optional and Android only -->
+<name>eZTravel</name>
+<description>An example for phonegap build APP from Alice. </description>
+<author email="10780121@gm.nfu.edu.tw" href="https://www.nfu.edu.tw/zh/">Alice Doan </author>
+<content src="index.html"/>
+<platform name="android">
+<icon src="res/book.png"/>
+<icon src="res/android/book.png" density="ldpi"/>
+<icon src="res/android/book.png" density="mdpi"/>
+<icon src="res/android/book.png" density="hdpi"/>
+<icon src="res/android/book.png" density="xhdpi"/>
+</platform>
+</widget>

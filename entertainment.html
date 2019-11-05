@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    
+        <div is="page" id="home" data-role="page" style="background-image: url(images/bg_info.jpg); background-repeat: no-repeat; background-size: cover;">
+                <div style="background:white" data-role="header" data-position="fixed">
+                    <h1 style="color:black;text-align:center;font-size:24px;">Entertainment</h1>
+                    <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" href="index.html" rel="external">Back</a>
+                </div>
+                <div is="content" role="main" class="ui-content">
+                        <ul is="listview" data-role="listview" data-inset="true" id="movie_list" style="margin:0;">
+                        <li is="listview-li">
+                            <a href="#Content1" data-transition="slide" data-theme="a">Iron Man</a>
+                        </li>
+                        <li is="listview-li">
+                            <a href="#Content2" data-transition="flip" data-theme="a">Captain America</a>
+                        </li>
+                        <li is="listview-li">
+                            <a href="#Content3" data-transition="slideup" data-theme="a">Spider Man</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+            
+            <!-- Page: Content  -->
+            <div is="page" id="Content1" data-role="page" style="background-image: url(images/bg_info.jpg); background-repeat: no-repeat; background-size: cover;">
+                <div data-role="header" data-position="fixed" style="background-color:white;">
+                    <h1 style="color:black;text-align:center;font-size:24px;">Iron Man</h1>
+                    <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+                </div>
+                <div class="ui-content">
+                 <div><img src="images/ironman.jpg" style="width:40%;height: 25%;margin-left: 237px; margin-top: 20px;"></div>
+                </div>
+                <div style="text-align:center;align-items: center; justify-content: center; margin: 0 auto;width: 200px;">
+                        <a href="#BuyTicket1" data-role="button" data-theme="b" data-icon="arrow-r">
+                            <h5  style="text-align:center">Buy Ticket</h5>
+                        </a>
+                </div>
+            </div>
+           
+            <!-- Page: Content  -->
+            <div id="Content2" data-role="page" style="background-image: url(images/bg_info.jpg); background-repeat: no-repeat; background-size: cover;">
+                <div data-role="header" data-position="fixed" style="background-color:white;">
+                    <h1 style="color:black;text-align:center;font-size:24px;">Captain America</h1>
+                    <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+                </div>
+                <div class="ui-content">
+                 <div><img src="images/captainamerica.jpg" style="width:40%;height: 25%;margin-left: 237px; margin-top: 20px;"></div>
+                </div>
+                <div style="text-align:center;align-items: center; justify-content: center; margin: 0 auto;width: 200px;">
+                        <a href="#BuyTicket2" data-role="button" data-theme="b" data-icon="arrow-r">
+                            <h5  style="text-align:center">Buy Ticket</h5>
+                        </a>
+                </div>
+            </div>
+            
+            <!-- Page: Content  -->
+            <div id="Content3" data-role="page" style="background-image: url(images/bg_info.jpg); background-repeat: no-repeat; background-size: cover;">
+                <div data-role="header" data-position="fixed" style="background-color:white;">
+                    <h1 style="color:black;text-align:center;font-size:24px;">Spider Man</h1>
+                    <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+                </div>
+                <div class="ui-content">
+                 <div><img src="images/spiderman.jpg" style="width:40%;height: 25%;margin-left: 237px; margin-top: 20px;"></div>
+                </div>
+                <div style="text-align:center;align-items: center; justify-content: center; margin: 0 auto;width: 200px;">
+                        <a href="#BuyTicket3" data-role="button" data-theme="b" data-icon="arrow-r">
+                            <h5  style="text-align:center">Buy Ticket</h5>
+                        </a>
+                </div>
+            </div>
+            <!-- Page: BuyTicket  -->
+            <div id="BuyTicket1"  data-role="page" style="background-image: url(images/bg_info.jpg); background-repeat: no-repeat; background-size: cover;">
+                    <div data-role="header" data-position="fixed" style="background-color:white;">
+                        <h1 style="color:black;text-align:center;font-size:24px;">Buy Ticket</h1>
+                        <a class="ui-btn ui-btn-left" href="#Content1" data-transition="slide" data-direction="reverse">Back</a>
+                    </div>  
+                    <form class="form-inline;">
+                        <table class= "table table-hover table-bordered table-striped w-50 mt-4 mx-auto text-center">
+                            <tr>
+                                <td class="bg-success text-center text-white">Name</td>
+                                <td><input class="form-control w-100" type="text" placeholder="Enter name"></td>
+                                <td class="bg-success text-center text-white">Email</td>
+                                <td><input class="form-control w-100" type="text" placeholder="Enter email"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-success text-center text-white">Birthday</td>
+                                <td><input class="form-control w-100 text-center" type="date"></td>
+                                <td class="bg-success text-center text-white">Sweet Box</td>
+                                <td><div class="btn-group text-center">
+                                        <label class="btn btn-default text-black">
+                                        <input type="checkbox" autocomplete="off"> Yes
+                                        </label>
+                                        <label class="btn btn-default text-black">
+                                        <input type="checkbox" autocomplete="off"> No
+                                        </label>
+                                        </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-success text-center text-white">Phone No.</td>
+                                <td><input class="form-control w-100" type="text" placeholder="+886"></td>
+                                <td class="bg-success text-center text-white">Amount</td>
+                                <td><input class="form-control w-100" type="text" placeholder="Enter Amount Ticket"></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <div style="text-align:center;align-items: center; justify-content: center; margin: 0 auto;width: 200px;">
+                        <a href="#Content1" data-role="button" data-theme="b" data-icon="check">
+                            <h5  style="text-align:center">Buy Now</h5>
+                        </a>
+                    </div>
+                </div> 
+                <!-- Page: BuyTicket  -->
+             <div id="BuyTicket2"  data-role="page" style="background-image: url(images/bg_info.jpg); background-repeat: no-repeat; background-size: cover;">
+                <div data-role="header" data-position="fixed" style="background-color:white;">
+                    <h1 style="color:black;text-align:center;font-size:24px;">Buy Ticket</h1>
+                        <a class="ui-btn ui-btn-left" href="#Content2" data-transition="slide" data-direction="reverse">Back</a>
+                    </div>  
+                    <form class="form-inline;">
+                        <table class= "table table-hover table-bordered table-striped w-50 mt-4 mx-auto text-center">
+                            <tr>
+                                <td class="bg-success text-center text-white">Name</td>
+                                <td><input class="form-control w-100" type="text" placeholder="Enter name"></td>
+                                <td class="bg-success text-center text-white">Email</td>
+                                <td><input class="form-control w-100" type="text" placeholder="Enter email"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-success text-center text-white">Birthday</td>
+                                <td><input class="form-control w-100 text-center" type="date"></td>
+                                <td class="bg-success text-center text-white">Sweet Box</td>
+                                <td><div class="btn-group text-center">
+                                        <label class="btn btn-default text-black">
+                                        <input type="checkbox" autocomplete="off"> Yes
+                                        </label>
+                                        <label class="btn btn-default text-black">
+                                        <input type="checkbox" autocomplete="off"> No
+                                        </label>
+                                        </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-success text-center text-white">Phone No.</td>
+                                <td><input class="form-control w-100" type="text" placeholder="+886"></td>
+                                <td class="bg-success text-center text-white">Amount</td>
+                                <td><input class="form-control w-100" type="text" placeholder="Enter Amount Ticket"></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <div style="text-align:center;align-items: center; justify-content: center; margin: 0 auto;width: 200px;">
+                        <a href="#Content2" data-role="button" data-theme="b" data-icon="check">
+                            <h5  style="text-align:center">Buy Now</h5>
+                        </a>
+                    </div>
+                </div> 
+            
+            
+             <!-- Page: BuyTicket  -->
+             <div id="BuyTicket3"  data-role="page" style="background-image: url(images/bg_info.jpg); background-repeat: no-repeat; background-size: cover;">
+                <div data-role="header" data-position="fixed" style="background-color:white;">
+                    <h1 style="color:black;text-align:center;font-size:24px;">Buy Ticket</h1>
+                    <a class="ui-btn ui-btn-left" href="#Content3" data-transition="slide" data-direction="reverse">Back</a>
+                </div>  
+                <form class="form-inline;">
+                    <table class= "table table-hover table-bordered table-striped w-50 mt-4 mx-auto text-center">
+                        <tr>
+                            <td class="bg-success text-center text-white">Name</td>
+                            <td><input class="form-control w-100" type="text" placeholder="Enter name"></td>
+                            <td class="bg-success text-center text-white">Email</td>
+                            <td><input class="form-control w-100" type="text" placeholder="Enter email"></td>
+                        </tr>
+                        <tr>
+                            <td class="bg-success text-center text-white">Birthday</td>
+                            <td><input class="form-control w-100 text-center" type="date"></td>
+                            <td class="bg-success text-center text-white">Sweet Box</td>
+                            <td><div class="btn-group text-center">
+                                    <label class="btn btn-default text-black">
+                                    <input type="checkbox" autocomplete="off"> Yes
+                                    </label>
+                                    <label class="btn btn-default text-black">
+                                    <input type="checkbox" autocomplete="off"> No
+                                    </label>
+                                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bg-success text-center text-white">Phone No.</td>
+                            <td><input class="form-control w-100" type="text" placeholder="+886"></td>
+                            <td class="bg-success text-center text-white">Amount</td>
+                            <td><input class="form-control w-100" type="text" placeholder="Enter Amount Ticket"></td>
+                        </tr>
+                    </table>
+                </form>
+                <div style="text-align:center;align-items: center; justify-content: center; margin: 0 auto;width: 200px;">
+                    <a href="#Content3" data-role="button" data-theme="b" data-icon="check">
+                        <h5  style="text-align:center">Buy Now</h5>
+                    </a>
+                </div>
+            </div> 
+    
+</body>
+</html>

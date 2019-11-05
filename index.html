@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: white;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: red;
+            text-decoration: none;
+        }
+        
+        a:active {
+            color: yellow;
+            text-decoration: none;
+        }
+        .ui-page
+{
+background: #000;
+background-image:url(images/bg.jpg);
+background-size:cover;  
+}        
+    </style>
+</head>
+<body>
+    <div is="page" id="home" data-role="page" >        
+        <div data-role="header" style="font-size:24px; background: -webkit-linear-gradient(rgb(209, 54, 139),white)">
+            <h1 style="font-size: 30px; color:whitesmoke"><I>LEARNING CHINESE - TAIWAN</I></h1>
+            <a class="ui-btn ui-btn-right ui-btn-icon-left ui-icon-info ui-btn-icon-notext ui-corner-all" style="margin:12px;"></a>
+        </div><!-- /header -->
+        
+        <div role="main" class="ui-content">
+            <div class="ui-grid-b" style="height: 180px; margin-top: 30px;">
+                <div class="ui-block-a" style="text-align: center;height:100%">
+                    <a href="info.html" rel="external">
+                    <img src="../images/home.png">
+                    <h5  style="text-align:center; margin-top:-5px;margin-left:15px;font-size: 18px">My Home</h5>
+                    </a>
+                </div>
+                <div class="ui-block-c" style="text-align: center;height:100%">
+                        <a href="book.html" rel="external">
+                        <img src="../images/book.png">
+                        <h5 style="text-align:center; margin-top:-5px;margin-left:15px;font-size: 18px">Book Lists</h5> 
+                    </div>
+                    <div class="ui-block-b" style="text-align: center;height:100%">
+                            <a href="news.html" rel="external">
+                            <img src="../images/news.png">
+                            <h5 style="text-align:center; margin-top:-5px;margin-left:15px;font-size: 18px">Taiwanese 24h News</h5> 
+                        </div>
+            </div><!-- /grid-b -->
+        </div><!-- /content -->
+
+        <div role="main" class="ui-content">
+                <div class="ui-grid-b" style="height: 180px; margin-top: 30px;">
+                    <div class="ui-block-c" style="text-align: center;height:100%">
+                            <a href="entertainment.html" rel="external">
+                            <img src="../images/entertainment.png">
+                            <h5 style="text-align:center; margin-top:-5px;margin-left:15px;font-size: 18px">Entertainment</h5> 
+                        </div>
+                    <div class="ui-block-b" style="text-align: center;height:100%">
+                            <a href="weather.html" rel="external">
+                            <img src="../images/weather.png">
+                            <h5 style="text-align:center; margin-top:-5px;margin-left:15px;font-size: 18px">Weather</h5>
+                        </div>
+                    <div class="ui-block-b" style="text-align: center;height:100%">
+                            <a href="comment.html" rel="external">
+                            <img src="../images/Vocab.png">
+                            <h5 style="text-align:center; margin-top:-5px;margin-left:15px;font-size: 18px">Comments</h5> 
+                        </div>
+                </div><!-- /grid-b -->
+            </div><!-- /content -->
+
+        
+        <div data-role="footer" style="background: violet">
+            <h4>@Design by Alice Doan</h4>
+        </div><!-- /footer -->
+
+    </div><!-- /page -->
+</body>
+</html>

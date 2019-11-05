@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+        <div is="page" id="home" data-role="page" style="background-image: url(images/bg_info.jpg); background-repeat: no-repeat; background-size: cover;">
+                <div data-role="header" data-position="fixed" style="background-color:white;">
+                    <h1 style="color:black;text-align:center;font-size:24px;">Book Lists</h1>
+                    <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" href="index.html" rel="external">Back</a>
+    </div>
+    <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true">
+                <li><a href="#BuyItem">Advanced Grammar</a></li>
+                <li><a href="#BuyItem">Chinese 1</a></li>
+                <li><a href="#BuyItem">Chinese 2</a></li>
+                <li><a href="#BuyItem">Grammar in use</a></li>
+                <li><a href="#BuyItem">How to speak in 10 days</a></li>
+                <li><a href="#BuyItem">Why we need to study Chinese?</a></li>
+                <li><a href="#BuyItem">Using daily conversation</a></li>
+            </ul>
+    </div>
+        <!-- Page: BuyItem  -->
+     <div id="BuyItem" data-role="page" style="background-color:white;">
+        <div data-role="header" data-position="fixed" style="background-color:brown;">
+            <h1 style="color:white;text-align:center;font-size:24px;">Buy Book</h1>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>  
+        <form class="form-inline;">
+            <table class= "table table-hover table-bordered table-striped w-50 mt-4 mx-auto text-center">
+                <tr>
+                    <td class="bg-success text-center text-white">Name</td>
+                    <td><input class="form-control w-100" type="text" placeholder="Enter name"></td>
+                    <td class="bg-success text-center text-white">Email</td>
+                    <td><input class="form-control w-100" type="text" placeholder="Enter email"></td>
+                </tr>
+                <tr>
+                    <td class="bg-success text-center text-white">Birthday</td>
+                    <td><input class="form-control w-100 text-center" type="date"></td>
+                    <td class="bg-success text-center text-white">Name</td>
+                    <td><input class="form-control w-100" type="text" placeholder="Enter fruit's name"></td>
+                </tr>
+                <tr>
+                    <td class="bg-success text-center text-white">Phone No.</td>
+                    <td><input class="form-control w-100" type="text" placeholder="+886"></td>
+                    <td class="bg-success text-center text-white">Amount</td>
+                    <td><input class="form-control w-100" type="text" placeholder="Enter Amount (kg)"></td>
+                </tr>
+            </table>
+        </form>
+        <div style="text-align:center;align-items: center; justify-content: center; margin: 0 auto;width: 200px;">
+            <a href="fruits.html" data-role="button" data-theme="b" data-icon="check">
+                <h5  style="text-align:center">Add to cart</h5>
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>

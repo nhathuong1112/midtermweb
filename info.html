@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body> 
+    <div class="bg"></div>
+    <div is="page" id="home" data-role="page" style="background-image: url(images/bg_info.jpg); background-repeat: no-repeat; background-size: cover;">
+        <div is="header" style="background:white" data-role="header" data-position="fixed">
+            <h3 style="text-align:center; font-size: 18px"><i>INFORMATION</i> </h3>
+            <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" href="index.html" rel="external">Back</a>
+        </div>
+            <div is="content" role="main" class="ui-content" style="background-color: thistle; text-align: center">
+                <ul is="listview" data-role="listview" data-inset="true" id="food_list" style="margin:0;">
+                    <li is="listview-li">
+                        <a href="#Content1" data-transition="slidedown" data-theme="a"><img src="../images/info1.jpg" height="100%">About Chinese</a>
+                    </li>
+                    </ul>
+                <ul is="listview" data-role="listview" data-inset="true" id="food_list" style="margin:0;">
+                    <li is="listview-li">
+                        <a href="#Content2" data-transition="pop" data-theme="a"><img src="../images/info2.png" height="100%">Why we learn Chinese?</a>
+                    </li>   
+                    </ul>
+            </div>
+        </div>    
+      <!-- Page: Content  -->
+    <div id="Content1" data-role="page" style="background-image: url(images/bg_info.jpg);">
+                <div data-role="header" data-position="fixed" style="background-color:aliceblue;">
+                    <h1 style="color:black;text-align:center;font-size:24px;">General introduction</h1>
+                    <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+                </div>
+            <div id="news_article"  class="slab"  data-pid="170865">
+                    <p style="text-align: justify; width: 70%; margin-left: 150px">Learning Chinese has many benefits across the spectrum, from gaining cultural insight to better  business opportunities, from making lifelong friendships to travelling. In fact, there has never been a better time to learn Chinese than today! Here are our 10 reasons to learn Chinese:</p>
+                <p style="text-align: justify; width: 70%; margin-left: 150px"><strong>Travel to China</strong></p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px">The biggest benefit of learning Mandarin is that allows you to uncover the mesmerising country of China on your own. If you are not the typical tourist, then take the chance to learn Mandarin, and you will find that on your travels you will unearth the “real China”. Even with limited speaking skills, locals will value the effort and will make a special considerations to welcome you.</p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px"><strong>Discover Chinese culture</strong></p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px">China’s vast history and culture is incredibly well-known, with its impact being seen by its appreciation globally. A Chinese language ability will allow you to delve deeper into China’s cultural riches, by being able to explore renowned Chinese novels, short stories, poetry, film, TV and music.</p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px"><strong>Enter the Chinese business world</strong></p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px">Over the last 35 years, China has transformed itself to become arguably the largest global economy, with China’s boom and its status as a rising global superpower allowing Western Mandarin-speaking businessmen to thrive off the nations riches.</p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px"><strong>Work in China</strong></p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px">Through opening itself up to the world, China has welcomed foreign investment and economic cooperation. As such, there is a massive demand for people who are able to bridge the gap between this new China and the greater world.</p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px"><strong>Boost your CV</strong></p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px">Through learning Chinese, you can transform yourself into somebody invaluable to the success of a project in China and demonstrate great intellectual capacity, making yourself stand out from the crowd.</p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px"><strong>It’s easy to pick up</strong></p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px">Although Chinese is considered a difficult language to pick up, it is easier to get started than you might think. Students of the language are often able to start speaking basic Chinese in as little as a few weeks of beginning their studies.</p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px"><strong>More ways to learn Chinese than ever</strong></p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px">Previously, Mandarin learning could be considered an arduous process involving huge dictionaries, endless character lists and poorly recorded audio tapes. Luckily, there are now much better ways you can learn Chinese. TCB and other platforms, including <a href="https://www.pleco.com/">Pleco</a>, have revolutionised the way students study Chinese, encouraging the little and often approach, with greater proven benefits.</p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px"><strong>Communicate with a billion people</strong></p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px">Only through speaking Chinese can someone really experience everything that China and its millennia-old civilisation has to offer. Chinese language skills open up just over 1.3 billion people across China!</p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px"><strong>Make friends </strong></p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px">Learning Mandarin gives you access to communicate with many people and connect on a deeper level, not just in Asia but across the world!</p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px"><strong>Good brain exercise</strong></p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px">Studies suggest that learning Chinese uses more parts of the brain than are required for other languages. As there are numerous differences between learning Chinese when compared with the English language, including tones and characters, it is believed that learning Chinese takes more brain power! Whereas English speakers only use the left temporal lobe, speakers of Mandarin use both. Furthermore, learning to write characters can help with motor skills and visual recognition will keep the mind sharp.</p>
+                <p style="text-align: justify;width: 70%; margin-left: 150px">Interested in learning Chinese but still not sure? How about having a look at <a href="https://www.thechairmansbao.com/top-10-chinese-words-in-english/">The 10 Most Recognised Chinese Words in English Language</a>, you might already know some Mandarin!</p>
+                </div>
+                </div>
+    </div>
+
+        <!-- Page: Content  -->
+        <div id="Content2" data-role="page" style="background-image: url(images/bg_info.jpg);">
+            <div data-role="header" data-position="fixed" style="background-color:aliceblue;">
+                <h1 style="color:black;text-align:center;font-size:24px;">Why we study Chinese</h1>
+                <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+            </div>
+            <div>
+                    <h2 style="width: 70%; margin-left: 150px">1. Chinese is the most spoken language in the world</h2>
+                    <p><img src="https://blog.keatschinese.com/hubfs/Blog%20Posts/post%2044%20-%20mandarin%20benefits/iStock-451534499.jpg" alt="Why study Mandarin" width="50%"></p>
+                    <p style="width: 70%; margin-left: 150px" >Yes, this is the first and the most important reason why you should study Mandarin. If you’re going to learn another language, why not make it the language that’s the most spoken in the world? More than 1.2 billion people speak Chinese.</p>
+                    <p style="width: 70%; margin-left: 150px">Not only is Chinese spoken in China, but it’s also sposken in Singapore and Taiwan. Chinese speaking people are living all across the world and if you’re a professional, it’s more than likely that one of your clients, suppliers or colleagues will speak Mandarin.</p>
+                    </div>
+                    <div>
+                    <h2 style="width: 70%; margin-left: 150px" >2. Speaking of careers, learning Mandarin will help you gain maturity</h2>
+                    <p><img src="https://blog.keatschinese.com/hubfs/Blog%20Posts/post%2044%20-%20mandarin%20benefits/iStock-619518292.jpg" alt="Why study Mandarin"></p>
+                    <p style="width: 70%; margin-left: 150px">There’s always room for growth, especially as we move into a new calendar year.</p>
+                    <p style="width: 70%; margin-left: 150px">A study by Smart Study found that 95% of people who took part in their study admitted that studying another language abroad served as a catalyst for increased maturity.</p>
+                    <p style="width: 70%; margin-left: 150px">This means that those people who questioned why they should learn Mandarin eventually travelled to China, studied at a Mandarin language school and gained a new level of maturity because of the increased knowledge.</p>
+                    </div>
+                    <div>
+        
+                        
+</div>
+</div>
+</body>
+</html>
